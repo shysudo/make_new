@@ -8,7 +8,7 @@ We can explore more on them below
     
         func new(T) *T
 
-It can be seen its function parameter is a type T and it return value is a pointer to memory address of its type *T.
+It can be seen that its function parameter is a type T and it return value is a pointer to memory address of its type *T.
 
 We can also put, 
 
@@ -67,8 +67,8 @@ make is designed to create these three built-in generic types.
 As slice, maps and channels are reference types, 
         mc := new(map[string]string) 
 
-        where new return *map[string]string and that mean mc is initialized to nil.
+Where new return *map[string]string and that mean mc is initialized to nil.
 
         (*mc)["str"] = "someone" // can not assign values to nil
 
-        nil can not be assigned directly.
+nil can not be assigned directly.
