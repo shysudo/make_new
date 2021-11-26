@@ -65,7 +65,8 @@ The make() function, is a special built-in function that is used to initialize s
 make is designed to create these three built-in generic types.
 
 As slice, maps and channels are reference types, 
-        mc := new(map[string]string) 
+        
+	mc := new(map[string]string) 
 
 Where new return *map[string]string and that mean mc is initialized to nil.
 
