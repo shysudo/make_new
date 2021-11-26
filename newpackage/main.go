@@ -30,4 +30,7 @@ func main() {
 	*mp = make(map[string]string) // if this omited, code will panic
 	(*mp)["name"] = "lc"
 	fmt.Println((*mp)["name"])
+	var x1 *int
+	var x2 = new(int)
+	fmt.Println(x1, x2)
 }
