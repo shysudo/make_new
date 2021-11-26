@@ -1,8 +1,8 @@
 # Golang make and new
 
-In golang both make and new are premitives for allocating memory, but still there are some difference between them
+In golang both make and new are premitives for allocating memory, but still there are some difference between them.
 
-We can explore more on them below
+We can explore more on them below.
 
 ## defination of the 'new' function
     
