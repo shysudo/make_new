@@ -71,6 +71,6 @@ As slice, maps and channels are reference types,
 Where new return *map[string]string and that mean mc is initialized to nil.
 	
 	(*mc)["str"] = "someone" 
-	fmt.Println(mc) // this line will panic, initialize to nil will throw a panic.
+	fmt.Println(mc) // this line will panic, assignment to entry in nil map.
 
 nil can not be assigned directly.
