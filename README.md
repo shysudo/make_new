@@ -70,6 +70,5 @@ As slice, maps and channels are reference types,
 
 Where new return *map[string]string and that mean mc is initialized to nil.
 	
-	(*mc)["str"] = "someone" // can not assign values to nil
-
+	(*mc)["str"] = "someone" // this line will panic, initialize to nil will throw a panic.
 nil can not be assigned directly.
