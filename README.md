@@ -58,9 +58,17 @@ We can see the output, the initialized memory address of struct and the zero val
     
         func make(t Type, size ...IntegerType) Type
 
-It can be seen its parameters are type and length(variadic) and return a type.
+It can be seen that its parameters are type and length(variadic) and returns a type.
 
 The make() function, is a special built-in function that is used to initialize slices, maps, and channels. make() can only be used to initialize slices, maps and channels and it does not return a pointer.
 
 make is designed to create these three built-in generic types.
 
+As slice, maps and channels are reference types, 
+        mc := new(map[string]string) 
+
+        where new return *map[string]string and that mean mc is initialized to nil.
+
+        (*mc)["str"] = "someone" // can not assign values to nil
+
+        nil can not be assigned directly.
