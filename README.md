@@ -74,3 +74,6 @@ Where new return *map[string]string and that mean mc is initialized to nil.
 	fmt.Println(mc) // this line will panic, assignment to entry in nil map.
 
 nil can not be assigned directly.
+
+End note :
+The reason for the distinction in memory allocation is that these three type represent, under the covers, references to the data structures that must be initialize before use. for slice, map and channel make initialize the internal data structure and prepare the value for use.
